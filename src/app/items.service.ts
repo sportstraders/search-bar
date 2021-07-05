@@ -8,8 +8,7 @@ import { delay } from 'rxjs/operators';
 export class ItemsService {
   constructor() {}
 
-  // items$ = of(DATA).pipe(delay(1000));
-  getItems() {
+  getItems(filter: string) {
     return of(DATA).pipe(delay(1000));
   }
 }
